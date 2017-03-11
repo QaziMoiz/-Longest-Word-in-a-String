@@ -1,0 +1,15 @@
+function findLongestWord(str){
+  myArray=[];
+  var brokenDownSentence = str.split(/\s+/gi);
+  
+  for (var i = 0; i < brokenDownSentence.length; i++){
+    myArray.push(brokenDownSentence[i].length);
+  }
+  var lengthOflongestWord = Math.max(...myArray);
+  console.log(lengthOflongestWord);
+}
+findLongestWord("The quick brown fox jumped over the lazy dog");
+
+/*the lenght of the longestWord would be bigger then all the other words in the sentense.
+hw do we check the lenght of each word in a sentense?
+  We can check the length of each word in a sentense and store the length in an array object. Then return the longest.*/
